@@ -24,31 +24,31 @@ I hope this makes sense. I'm very proud of this implementation, which is why I m
 NOTE: These first two block diagrams are not two separate modules. They are the same module, but split into two SVG files for easier viewing, due to its complexity.
 
 rand_num_game diagram:
-![game_BlockDiagram_1of2](https://github.com/aseddin-teaching/sp21-final-stevenjmaev/blob/main/Images/block_diagram_1_of_2.svg)
-![game_BlockDiagram_2of2](https://github.com/aseddin-teaching/sp21-final-stevenjmaev/blob/main/Images/block_diagram_2_of_2.svg)
+![game_BlockDiagram_1of2](Images/block_diagram_1_of_2.svg)
+![game_BlockDiagram_2of2](Images/block_diagram_2_of_2.svg)
 
 ASCII_messenger diagram:
-![messenger_BlockDiagram](https://github.com/aseddin-teaching/sp21-final-stevenjmaev/blob/main/Images/ASCII_messenger_blockdiagram.svg)
+![messenger_BlockDiagram](Images/ASCII_messenger_blockdiagram.svg)
 
 
 ###### Finite State Diagrams:
 Game FSM Diagram:
 
-![game_fsm](https://github.com/aseddin-teaching/sp21-final-stevenjmaev/blob/main/Images/random_number_game_fsm.svg)
+![game_fsm](Images/random_number_game_fsm.svg)
 
 ASCII Console Messenger FSM Diagram:
 
-![messenger_fsm](https://github.com/aseddin-teaching/sp21-final-stevenjmaev/blob/main/Images/ASCII_messenger_fsm.svg)
+![messenger_fsm](Images/ASCII_messenger_fsm.svg)
 
 
 ###### Simulation Results:
 Game FSM simulation:
-![Game_simulation](https://github.com/aseddin-teaching/sp21-final-stevenjmaev/blob/main/Images/game_fsm_tb.png)
+![Game_simulation](Images/game_fsm_tb.png)
 
 Messenger FSM simulation:
-![messenger_simulation](https://github.com/aseddin-teaching/sp21-final-stevenjmaev/blob/main/Images/messenger_tb_simulation.png)
+![messenger_simulation](Images/messenger_tb_simulation.png)
 
 
 ##### Video Demonstration:
-[![DemoVideo](https://github.com/aseddin-teaching/sp21-final-stevenjmaev/blob/main/Images/VideoThumbnail.png)](https://youtu.be/7WWKBiacgQU)
+[![DemoVideo](Images/VideoThumbnail.png)](https://youtu.be/7WWKBiacgQU)
 
