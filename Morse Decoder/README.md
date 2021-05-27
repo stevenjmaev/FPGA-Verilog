@@ -37,33 +37,33 @@ The user must enter morse code (dots and dashes) using a single push button. The
 
 ##### Images
 ###### Block Diagram:
-![Lab12_BlockDiagram_1](https://github.com/aseddin-teaching/lab-12---morse-code-terminal-group-5-1/blob/main/Images/Morse2Hex_Block_Diagram.svg)
+![Lab12_BlockDiagram_1](Images/Morse2Hex_Block_Diagram.svg)
 
 ###### REVISED FSM Diagram:
-![Lab12_StateDiagram](https://github.com/aseddin-teaching/lab-12---morse-code-terminal-group-5-1/blob/main/Images/FSM_diagram_revised.svg)
+![Lab12_StateDiagram](Images/FSM_diagram_revised.svg)
 
 ###### Example Inputs:
 
 ###### The FSM considers the following morse code inputs as a **DOT** :
 (i.e. a **DOT** is considered whenever b is asserted for more than 1 time unit, but less than 3 time units)
-![Lab12_dot_eg](https://github.com/aseddin-teaching/lab-12---morse-code-terminal-group-5-1/blob/main/Images/dot_examples.svg)
+![Lab12_dot_eg](Images/dot_examples.svg)
 
 ###### The FSM considers the following morse code inputs as a **DASH** :
 (i.e. a **DASH** is considered whenever b is asserted for more than 3 time units)
-![Lab12_dash_eg](https://github.com/aseddin-teaching/lab-12---morse-code-terminal-group-5-1/blob/main/Images/dash_examples.svg)
+![Lab12_dash_eg](Images/dash_examples.svg)
 
 ###### The FSM considers the following morse code inputs as an **LG** :
 (i.e. an **LG** is considered whenever b is low for more than 3 time units, but less than 7 time units)
-![Lab12_LG_eg](https://github.com/aseddin-teaching/lab-12---morse-code-terminal-group-5-1/blob/main/Images/LG_examples.svg)
+![Lab12_LG_eg](Images/LG_examples.svg)
 
 ###### The FSM considers the following morse code inputs as a **WG** :
 (i.e. a **WG** is considered whenever b is low for more than 7 time units, but less than 20 time units)
 
 Note: after 20 time units, the system times out, registers a WG, and returns to an idle state
-![Lab12_WG_eg](https://github.com/aseddin-teaching/lab-12---morse-code-terminal-group-5-1/blob/main/Images/WG_examples.svg)
+![Lab12_WG_eg](Images/WG_examples.svg)
 
 ##### Video Demonstration:
-[![Lab12_DemoVideo](https://github.com/aseddin-teaching/lab-12---morse-code-terminal-group-5-1/blob/main/Images/LAB_12_GIF.gif)](https://youtu.be/pc9WYbn7ULM)
+[![Lab12_DemoVideo](Images/LAB_12_GIF.gif)](https://youtu.be/pc9WYbn7ULM)
 
 ###### International Morse Code Standard:
-![Lab12_Image](https://github.com/aseddin-teaching/lab-12---morse-code-terminal-group-5-1/blob/main/Images/Morse_Code.png)
+![Lab12_Image](Images/Morse_Code.png)
