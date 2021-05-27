@@ -35,15 +35,15 @@ This lab uses a Finite State Machine (FSM) to implement a parking lot occupancy 
 
 ##### Images
 ###### FSM Diagram:
-![Lab8_StateDiagram](https://github.com/aseddin-teaching/lab-8---parking-lot-occupancy-counter-group-5-1/blob/main/Images/FSM_diagram.svg)
+![Lab8_StateDiagram](Images/FSM_diagram.svg)
 
 ###### Testbench Simulation:
 ######  Scenario 1: Unaccounted for car leaves "empty" lot then re-enters space. Wanted to show that the counter wraps back to 255 then increments back to 0.
-![Lab8_simulation_0](https://github.com/aseddin-teaching/lab-8---parking-lot-occupancy-counter-group-5-1/blob/main/Images/parking_lot_application_testbench_0.png)
+![Lab8_simulation_0](Images/parking_lot_application_testbench_0.png)
 ######  Scenario 2: Car enters then leaves parking lot. Wanted to show that the counter increments to 1, then decrements to 0.
-![Lab8_simulation_1](https://github.com/aseddin-teaching/lab-8---parking-lot-occupancy-counter-group-5-1/blob/main/Images/parking_lot_application_testbench_1.png)
+![Lab8_simulation_1](Images/parking_lot_application_testbench_1.png)
 ######  Scenario 3: Car begins to enter, but then reverses out and exits. Wanted to show that the code increments through the states of the FSM, but does not increment counter.
-![Lab8_simulation_2](https://github.com/aseddin-teaching/lab-8---parking-lot-occupancy-counter-group-5-1/blob/main/Images/parking_lot_application_testbench_2.png)
+![Lab8_simulation_2](Images/parking_lot_application_testbench_2.png)
 
 ##### Video Demonstration:
-[![Lab8_DemoVideo](https://github.com/aseddin-teaching/lab-8---parking-lot-occupancy-counter-group-5-1/blob/main/Images/Lab_8_Gif.gif)](https://youtu.be/BWKJPQsHB3s)
+[![Lab8_DemoVideo](Images/Lab_8_Gif.gif)](https://youtu.be/BWKJPQsHB3s)
