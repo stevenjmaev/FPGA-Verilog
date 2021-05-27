@@ -11,7 +11,7 @@ The top level file is **frequency_meter.v**, and is comprised of the following m
 Note that `freq_memory` and `average_4vals` are the newly created modules for this module. Descriptions of each of them (and their newly-created sub-modules) follow below.
 
 ###### Block Diagram:
-![freq_meter_BlkDgm](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/frequency_meter_blockDiagram.svg)
+![freq_meter_BlkDgm](Images/frequency_meter_blockDiagram.svg)
 
 ---
 
@@ -25,7 +25,7 @@ This module is comprised of 2 sub-modules:
 The purpose of this module is simply to read the measured frequency from the module `freq_measurement` and store it in the file register, `reg_file` which is configured to have 4 registers each of which hold a 26-bit value (which is the same size of the measured frequency). Every time the `freq_measurement` outputs a _**done**_ signal, then the writing address, is incremented and the measurement is added. 
 
 ###### Block Diagram:
-![freq_memory_BlkDgm](Images/freq_memory_blockDiagram.svg)<!--(https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/freq_memory_blockDiagram.svg)-->
+![freq_memory_BlkDgm](Images/freq_memory_blockDiagram.svg)
 
 Note that the `2-bit incrementing register (see code)` block is meant to represent the following code:
 ```verilog
@@ -50,10 +50,10 @@ This module is comprised of 4 sub-modules:
 The purpose of this module is simply to read the frequency of a given waveform/squarewave and output its value along with a _**done**_ signal that tells when the value is ready for reading.
 
 ###### Block Diagram:
-![freq_measurement_BlkDgm](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/freq_measurement_blockDiagram.svg)
+![freq_measurement_BlkDgm](Images/freq_measurement_blockDiagram.svg)
 
 ###### FSM Diagram (freq_measurement_fsm):
-![freq_measurement_FSM](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/freq_measurement_fsm.svg)
+![freq_measurement_FSM](Images/freq_measurement_fsm.svg)
 
 ---
 #### average_4vals and its sub-modules
@@ -65,7 +65,7 @@ This module envelopes 2 sub-modules:
 The purpose of this module is simply to read four values from a 4x26 register file and output their average, updating every 5 clock cycles.
 
 ###### Block Diagram:
-![average_4vals_BlkDgm](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/average_4vals_blockDiagram.svg)
+![average_4vals_BlkDgm](Images/average_4vals_blockDiagram.svg)
 
 Again, note that the `2-bit incrementing register (see code)` block is meant to represent the following code:
 ```verilog
@@ -81,22 +81,22 @@ end
 ```
 
 ###### FSM Diagram (average_4vals_fsm):
-![freq_measurement_FSM](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/average_4vals_fsm.svg)
+![freq_measurement_FSM](Images/average_4vals_fsm.svg)
 ***
 
 ###### Testbench Simulations:
 ######  freq_measurement_tb: 
 In this simulation, we see that the frequency measurement is ready for reading when the done signal (magenta waveform) is asserted at 500 ms. Also, the input squarewave's period was set to **1300 ns** in this simulation, which relates to a frequency of **769,230.76 Hz**. The frequency measured in the simulation (orange waveform) is **769230 Hz**.
-![freq_measurement](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/freq_measurement_tb_sim_period1300ns.png)
+![freq_measurement](Images/freq_measurement_tb_sim_period1300ns.png)
 
 ######  freq_memory_tb:
 In this simulation, we can see that every 500 ms (the time scale is 1us:1ms), a the memory in reg_file is appended with a new frequency value.
-![freq_memory](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/freq_memory_tb_sim_seeRegisterWrites.png)
+![freq_memory](Images/freq_memory_tb_sim_seeRegisterWrites.png)
 
 ######  frequency_meter_tb: 
 In this simulation, we show that the averaging functionality of the `average_4vals` module works properly, as we can view the 4 values stored in memory and the average of them.
-![frequency_meter](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/frequency_meter_tb_sim_averaging.png)
+![frequency_meter](Images/frequency_meter_tb_sim_averaging.png)
 
 ##### Video Demonstration:
 Note that the machine uses a moving average to measure the frequency, so it takes a couple of seconds for the display to stabilize.
-[![DemoVideo](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/VidThumbnail.png)](https://youtu.be/0ByH15WfleE)
+[![DemoVideo](Images/VidThumbnail.png)](https://youtu.be/0ByH15WfleE)
