@@ -25,7 +25,7 @@ This module is comprised of 2 sub-modules:
 The purpose of this module is simply to read the measured frequency from the module `freq_measurement` and store it in the file register, `reg_file` which is configured to have 4 registers each of which hold a 26-bit value (which is the same size of the measured frequency). Every time the `freq_measurement` outputs a _**done**_ signal, then the writing address, is incremented and the measurement is added. 
 
 ###### Block Diagram:
-![freq_memory_BlkDgm](https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/freq_memory_blockDiagram.svg)
+![freq_memory_BlkDgm](Images/freq_memory_blockDiagram.svg)<!--(https://github.com/aseddin-teaching/sp21-midterm-2-stevenjmaev/blob/main/Images/freq_memory_blockDiagram.svg)-->
 
 Note that the `2-bit incrementing register (see code)` block is meant to represent the following code:
 ```verilog
