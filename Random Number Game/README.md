@@ -5,7 +5,7 @@
 ***
 
 Some important descriptions:
-When sending messages to be shown on the computer terminal, I created a module called `ASCII_messenger` which reads messages from ROM. These messages are arranged as follows:
+When sending messages to be shown on the computer terminal via UART, I created a module called `ASCII_messenger` which reads messages from ROM. These messages are arranged as follows:
 * The most significant four bits of the ROM address (bits 7:4) indicate what we call the "message index"
 * The least significant four bits of the ROM address (bits 3:0) denote the addresses of each of the characters in the message. 
 * With this format, the ROM (whose address is 8 bits long and who stores 8-bit words) can store 2^4 = 16 messages, each containing a maximum of 2^4 = 16 characters.
