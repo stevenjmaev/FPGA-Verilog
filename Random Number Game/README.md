@@ -31,8 +31,8 @@ ASCII_messenger diagram:
 ![messenger_BlockDiagram](Images/ASCII_messenger_blockdiagram.svg)
 
 
-###### Finite State Diagrams:
-Game FSM Diagram:
+###### Algorithmic State Diagrams:
+Game ASM Diagram:
 
 ![game_fsm](Images/random_number_game_fsm.svg)
 
